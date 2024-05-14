@@ -1,5 +1,6 @@
 package com.example.appcarryingpet
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -15,7 +16,6 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusDirection
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.AnnotatedString
@@ -25,7 +25,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.appcarryingpet.ui.theme.AppCarryingPetTheme
 
-class MainActivity : ComponentActivity() {
+class LoginPage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -101,8 +101,7 @@ fun LoginScreen() {
 
         Button(
             onClick = {
-                // Aqui você pode implementar a lógica para verificar o nome de usuário e a senha
-                // Por enquanto, apenas vamos imprimir os valores para demonstração
+                //Implementar a lógica para verificar o nome de usuário e a senha
                 println("Username: $username")
                 println("Password: $password")
             },
@@ -113,8 +112,9 @@ fun LoginScreen() {
 
         Button(
             onClick = {
-                // Aqui você pode implementar a lógica para direcionar para a tela de registro
-                println("Abrir tela de registro")
+                //Lógica para direcionar para a tela de registro
+                val intent = Intent(context, RegisterPage::class.java)
+                context.startActivity(intent)
             },
             modifier = Modifier.fillMaxWidth().height(56.dp).padding(top = 16.dp)
         ) {

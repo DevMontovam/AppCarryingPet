@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppCarryingPet</string>
+    <string name="register_page_label">Register</string>
 </resources>
