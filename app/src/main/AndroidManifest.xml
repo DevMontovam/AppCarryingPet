@@ -13,7 +13,7 @@
         android:theme="@style/Theme.AppCarryingPet"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginPage"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCarryingPet">
@@ -23,6 +23,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".RegisterPage"
+            android:exported="true"
+            android:label="@string/register_page_label"
+            android:theme="@style/Theme.AppCarryingPet"/>
     </application>
 
 </manifest>
