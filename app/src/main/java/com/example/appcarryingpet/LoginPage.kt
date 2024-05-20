@@ -104,6 +104,10 @@ fun LoginScreen() {
                 //Implementar a lógica para verificar o nome de usuário e a senha
                 println("Username: $username")
                 println("Password: $password")
+
+                //Navegar para MainPage
+                val intent = Intent(context, MainPage::class.java)
+                context.startActivity(intent)
             },
             modifier = Modifier.fillMaxWidth().height(56.dp)
         ) {

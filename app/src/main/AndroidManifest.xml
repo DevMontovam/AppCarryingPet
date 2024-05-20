@@ -28,6 +28,16 @@
             android:exported="true"
             android:label="@string/register_page_label"
             android:theme="@style/Theme.AppCarryingPet"/>
+        <activity
+            android:name=".MainPage"
+            android:exported="true"
+            android:label="@string/main_page_label"
+            android:theme="@style/Theme.AppCarryingPet"/>
+        <activity
+            android:name=".EditUserPage"
+            android:exported="true"
+            android:label="@string/edit_page_label"
+            android:theme="@style/Theme.AppCarryingPet"/>
     </application>
 
 </manifest>

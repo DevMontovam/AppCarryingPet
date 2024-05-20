@@ -77,7 +77,7 @@ fun RegisterScreen() {
                     ) {
                         Button(onClick = {
                             showDialog = false
-                            val intent = Intent(context, LoginPage::class.java) //Mudar para MainPage::class.java
+                            val intent = Intent(context, MainPage::class.java) //Mudar para MainPage::class.java
                             context.startActivity(intent)
                         }) {
                             Text("Fazer Login")
@@ -85,8 +85,8 @@ fun RegisterScreen() {
                         Spacer(modifier = Modifier.width(16.dp))
                         Button(onClick = {
                             showDialog = false
-                            //val intent = Intent(context, EditUserPage::class.java)
-                            //context.startActivity(intent)
+                            val intent = Intent(context, EditUserPage::class.java)
+                            context.startActivity(intent)
                         }) {
                             Text("Editar Usuário")
                         }
